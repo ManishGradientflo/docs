@@ -1,5 +1,147 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Product Roadmap"
+description: "Month-by-month execution. Built in public."
 ---
 
+## **August 2025: User Profile Foundation**
+
+- OAuth integration for GitHub, Google, and LinkedIn with auto-import
+- 4-step progressive onboarding completed in under 90 seconds
+- Automatic GitHub profile detection including repositories, languages, and contribution graph
+- Tech stack builder covering 104 technologies across 8 categories
+- Persona-based goal setting for roles such as Student, Junior, Senior, Architect, and CTO
+- Dynamic resume generator with PDF export
+- Profile completion tracking targeting at least 80% on first run
+- Firestore and Neo4j architecture for data persistence
+- Session recovery and draft auto-save
+- Privacy controls for public and private profile visibility
+
+---
+
+## **September 2025: Core Tutor Agent and Single Artifact**
+
+- PlannerAgent (Level 0) for generating 5-step course blueprints
+- TutorAgent (Level 1) managing session state and flow
+- Support for a single artifact type: AI Docs with Markdown and code snippets
+- Prompt-to-course generation flow in under 60 seconds
+- Voice narration integration via Gemini Live API with under 1.2-second latency
+- Three-question quiz with pass/fail validation
+- Session state stored in-memory for guests and persistently for users
+- Basic analytics for course completion and time spent
+- Error handling and fallback paths
+- Mobile-responsive course viewer interface
+
+---
+
+## **October 2025: GitHub Analytics Dashboard**
+
+- GitHub OAuth with read-only access
+- Profile insights including followers, repositories, stars, and contribution graph
+- Language distribution analysis across repositories
+- Top six repositories ranked by engagement
+- Daily activity chart with a 30-day commit heatmap
+- Twelve-week contribution heatmap
+- Repository quality metrics such as documentation percentage, recent updates, and open issues
+- Developer engagement score algorithm
+- Redis caching layer with 5 to 15 minute TTL per profile
+- Public, shareable analytics links
+
+---
+
+## **November 2025: Multi-Modal Learning and Thesys Integration**
+
+- Course Mode offering structured 5-step learning sessions of 7 to 15 minutes
+- Voice Mode for quick voice-based brainstorming with one generated artifact
+- Chat Mode for Q&A with escalation to full courses
+- OmniBox with prompt enhancements and speech-to-text
+- Thesys RAG integration for contextual knowledge retrieval
+- Agent selector supporting Auto, PlannerAgent, and TutorAgent modes
+- Artifact type selector for manual or auto-detected choices
+- Live session room with three panels: voice, chat, and artifact viewer
+- Real-time transcript with barge-in support
+- Session sharing via read-only links
+
+---
+
+## **December 2025: Knowledge Graph and LVI Analytics**
+
+- Neo4j-powered Knowledge Graph with force-directed, hierarchical, and circular layouts
+- Learning Velocity Index (LVI) calculation engine
+- Skill confidence radar chart for top six skills
+- Active Memory Layers showing Archival, Core, and Working memory percentages
+- Learning DNA trait discovery with evolution timeline
+- 28-day activity heatmap similar to GitHub
+- AI Tutor engagement dashboard showing streaks, sessions, and questions
+- Career contributions hub with ready-to-copy resume bullets
+- Next-skill recommendations based on learning trajectory
+- Achievements and certificate showcase widgets
+
+---
+
+## **January 2026: Intelligence Layer Integrations**
+
+- Linear integration for issue-to-ByteCourse notifications
+- GitHub PR integration with automated course comments
+- SonarCloud integration for quality gate analysis and gap detection
+- CodeAnt integration for automated code scanning
+- PR-driven micro-loop: PR → Gap → Course → Learn → Apply → Verify
+- Webhook infrastructure for GitHub and Linear events
+- Gap detection engine covering coverage, security, complexity, and missing tests
+- Re-analysis on PR updates, with success or reminder comments
+- Automated skill profile updates with evidence links
+- Team Projects Dashboard with aggregated metrics
+
+---
+
+## **February 2026: Feature Completion Sprint**
+
+- Browser extension enabling learning from any documentation page (Chrome and Firefox)
+- Screenshot capture with ScreenPerceptionAgent analysis
+- Extension-to-course generation in under 60 seconds
+- [Localhost](http://Localhost) learning mode for learning from development environment errors
+- Auto-onboarding course generation from GitHub repositories
+- Referral system with unique codes and growth hooks
+- Waitlist management with attribution tracking
+- Email and push notifications via SendGrid and Firebase
+- Stripe payments for Free, Pro, and Team plans
+- Feedback integration creating tickets automatically in Linear
+
+---
+
+## **March 2026: Scale to 100K Users**
+
+- Infrastructure hardening including Cloud Run autoscaling and Redis clustering
+- Performance optimizations targeting under 2 seconds profile load (P95) and under 60 seconds course generation
+- Rate limiting and abuse prevention with API Gateway policies
+- Multi-layer caching using Redis and CDN
+- Firestore indexing and Neo4j query optimizations
+- Observability dashboards using Grafana and OpenTelemetry
+- Error monitoring and alerting with Sentry and PagerDuty
+- Load testing for over 100 concurrent users and burst scenarios
+- Security audit and penetration testing for SOC2 preparation
+- Customer success playbook for onboarding, support, and escalation
+
+---
+
+## **Beyond March 2026: Enterprise and Ecosystem**
+
+### **Q2 2026**
+
+- IDE extensions for VS Code, Cursor, and JetBrains
+- Multiplayer learning sessions
+- Team analytics and organization-wide LVI dashboards
+- Marketplace for custom artifact templates
+
+### **Q3 2026**
+
+- SOC2 certification and compliance
+- On-premises deployment option
+- SSO integrations including Okta and Auth0
+- Automatic advanced architecture diagram generation
+
+### **Q4 2026**
+
+- Public LVI leaderboards and industry benchmarking
+- Hiring manager integrations
+- API/SDK for third-party integrations
+- Community plugin ecosystem
