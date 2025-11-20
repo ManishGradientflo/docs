@@ -28,39 +28,39 @@ CREATE (u)-[:LEARNED {
   confidence: 0.85,
   timestamp: "2025-01-15"
 }]->(s:Skill {name: "Error Handling"})
-
-**Nodes:** Skills (size = proficiency, color = recency)
-
-**Edges:** Relationships (prerequisite, related, applied together)
-
-**Clusters:** Domains (Frontend, Backend, DevOps, AI/ML)
-
-## 3 Layout Modes
-
-<CardGroup cols={3}>
-  <Card title="Force-Directed" icon="circle-nodes">
-    Natural skill clustering
-  </Card>
-  <Card title="Hierarchical" icon="diagram-tree">
-    Skill dependencies
-  </Card>
-  <Card title="Circular" icon="ring">
-    Proficiency comparison
-  </Card>
-</CardGroup>
-
-## What You Can Do
-
-- **Explore:** Click a skill to see prerequisites and related concepts
-- **Find Gaps:** Gray nodes = skills you should learn next
-- **Track Growth:** Watch your graph expand over time
-- **Share:** Public profile includes embeddable graph widget
-
-## Privacy
-
-Your graph is **private by default**. You control visibility per skill.
-
-<Card title="See Your Graph" icon="diagram-project" href="/dashboard">
-  Open your profile →
-</Card>
 ```
+
+**Nodes** represent skills. Their size indicates proficiency, and their color indicates recency.\
+**Edges** represent relationships such as prerequisites, related skills, or skills that are commonly applied together.\
+**Clusters** group skills into broader domains such as Frontend, Backend, DevOps, or AI/ML.
+
+---
+
+## **Three Layout Modes**
+
+Your Knowledge Graph can be viewed in three different visualization layouts:
+
+**Force-Directed** – Creates natural clusters of related skills.\
+**Hierarchical** – Shows skill dependencies in a tree-like structure.\
+**Circular** – Displays skills in a ring for easier proficiency comparison.
+
+---
+
+## **What You Can Do With the Graph**
+
+- **Explore:** Click any skill to see related concepts and prerequisites.
+- **Find Gaps:** Skills shown in gray represent areas you can learn next.
+- **Track Growth:** Watch your graph expand as you learn over time.
+- **Share:** Your public profile includes an embeddable version of the graph.
+
+---
+
+## **Privacy**
+
+Your Knowledge Graph is private by default. You can choose what becomes visible and what stays hidden, on a per-skill basis.
+
+---
+
+## **Call to Action**
+
+You can open your profile to view your Knowledge Graph anytime.
