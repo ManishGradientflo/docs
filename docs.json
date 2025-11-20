@@ -2,64 +2,40 @@
   "$schema": "https://mintlify.com/docs.json",
   "name": "Documentation",
   "theme": "mint",
+
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
+
   "favicon": "/mnt/data/61a2eed2-a837-4025-bfbe-12553bf23fb4.png",
+
   "navigation": {
     "tabs": [
       {
-        "tab": "docs",
-        "groups":[
-          {
-            "group": "docs",
-            "pages": [
-              "docs/introduction",
-              "docs/quickstart"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/artifacts",
-              "essentials/knowledge-graph",
-              "essentials/lvi-scoring"
-            ]
-          },
-          {
-            "group": "Integrations",
-            "pages": [
-              "integrations/changelog",
-              "integrations/community",
-              "integrations/examples",
-              "integrations/github",
-              "integrations/roadmap"
-            ]
-          }
+        "tab": "Docs",
+        "pages": [
+          "docs/introduction",
+          "docs/quickstart",
+          "docs/essentials/artifacts",
+          "docs/essentials/knowledge-graph",
+          "docs/essentials/lvi-scoring",
+          "docs/integrations/changelog",
+          "docs/integrations/community",
+          "docs/integrations/examples",
+          "docs/integrations/github",
+          "docs/integrations/roadmap"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
+
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+
   "navbar": {
     "links": [
       {
@@ -73,6 +49,7 @@
       "href": "https://dashboard.mintlify.com"
     }
   },
+
   "contextual": {
     "options": [
       "copy",
@@ -85,6 +62,7 @@
       "vscode"
     ]
   },
+
   "footer": {
     "socials": {
       "x": "https://x.com/mintlify",
