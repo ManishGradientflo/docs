@@ -3,4 +3,81 @@ title: "Connect GitHub"
 description: "Turn PRs into learning opportunities in 2 minutes."
 ---
 
-# GitHub Integration Connect GitHub to unlock PR-driven learning. \<Steps\> \<Step title="Install the App (30 seconds)"\> Go to [Settings → Integrations](https://gradientflo.ai/settings/integrations) → Click **Connect GitHub**. **Scopes required:** - `repo:read` — PR diffs and commits - `pull_requests:write` — Post ByteCourse comments - `checks:read` — CI/CD results \</Step\> \<Step title="Select Repos"\> Choose which repos to monitor. Add more anytime. \</Step\> \<Step title="Webhooks Auto-Configure"\> We listen for: - `pull_request` (opened, updated, closed) - `workflow_run` (CI/CD completed) - `pull_request_review` (submitted) \</Step\> \</Steps\> ## What Happens Next **1. Open PR** → Intelligence layer activates in 5 seconds **2. Gap Detection** → Analyze diff + tests + coverage + complexity **3. ByteCourse Comment** → Posted in PR with course link **4. You Learn** → 10-minute interactive lesson **5. Apply & Push** → New commits trigger re-analysis **6. Verification** → Gap resolved? Success comment + skill graph update ## Example Comment \`\`\`markdown 🎓 **Gradientflo Insight** Gap: Missing error handling in API route Course: Error Handling in Next.js (8 mins) Evidence: No try/catch in `app/api/users/route.ts` 👉 [Start ByteCourse](https://gradientflo.ai/learn/pr/789) ## Privacy **We access:** PR metadata, file diffs, CI/CD results **We don't access:** Secrets, env variables, private issues **Storage:** Diffs cached 24 hours, then deleted ## Troubleshooting **Comments not appearing?** - Check webhook delivery in GitHub Settings - Verify `pull_requests:write` permission - Confirm repo is in monitored list \<Card title="Get Started" icon="github" href="https://gradientflo.ai/settings/integrations"\> Connect GitHub now → \</Card\> \`\`\`
+## **How to Set It Up**
+
+**Install the App (30 seconds)**\
+Go to Settings → Integrations → Connect GitHub.\
+The integration requires the following scopes:
+
+- `repo:read` — to read pull request diffs and commits
+- `pull_requests:write` — to post ByteCourse comments
+- `checks:read` — to access CI/CD results
+
+**Select Repositories**\
+Choose which repositories Gradientflo should monitor. You can add more at any time.
+
+**Webhooks Auto-Configure**\
+Gradientflo automatically listens for the following GitHub events:
+
+- `pull_request` (opened, updated, closed)
+- `workflow_run` (CI/CD completed)
+- `pull_request_review` (submitted)
+
+---
+
+## **What Happens Next**
+
+1. You open a pull request — the intelligence layer activates within about 5 seconds.
+2. Gap detection runs by analyzing the diff, tests, coverage, and complexity.
+3. A ByteCourse comment is posted to your PR with a personalized course link.
+4. You take a 10-minute interactive lesson.
+5. You apply what you learned and push commits — this triggers re-analysis.
+6. Verification happens automatically. If the gap is resolved, you receive a success comment and your Skill Graph updates.
+
+---
+
+## **Example Comment**
+
+```
+Gradientflo Insight  
+Gap: Missing error handling in API route  
+Course: Error Handling in Next.js (8 mins)  
+Evidence: No try/catch in app/api/users/route.ts  
+👉 Start ByteCourse
+```
+
+---
+
+## **Privacy**
+
+We access:
+
+- Pull request metadata
+- File diffs
+- CI/CD results
+
+We do **not** access:
+
+- Secrets
+- Environment variables
+- Private issues
+
+Storage policy:\
+File diffs are cached for 24 hours and then deleted.
+
+---
+
+## **Troubleshooting**
+
+If comments are not appearing in pull requests:
+
+- Check webhook delivery logs in GitHub Settings.
+- Verify that the `pull_requests:write` permission is enabled.
+- Confirm that the repository is included in the monitored list.
+
+---
+
+## **Get Started**
+
+You can connect GitHub at:\
+https://gradientflo.ai/settings/integrations
