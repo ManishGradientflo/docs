@@ -3,8 +3,6 @@ title: "Examples"
 description: "Real PRs. Real courses. Real impact."
 ---
 
-# Examples
-
 See Gradientflo in action with real developer workflows.
 
 ## Example 1: Missing Error Handling
@@ -12,6 +10,7 @@ See Gradientflo in action with real developer workflows.
 **PR Context:** Next.js API route with no try/catch
 
 <CodeGroup>
+
 ```typescript Before
 export async function POST(req: Request) {
   const body = await req.json();
@@ -19,6 +18,8 @@ export async function POST(req: Request) {
   return NextResponse.json(user);
 }
 ```
+
+
 ```typescript After (10-min course)
 export async function POST(req: Request) {
   try {
@@ -43,8 +44,8 @@ export async function POST(req: Request) {
 
 </CodeGroup>
 
-**ByteCourse:** Error Handling in Next.js (8 mins)  
-**Artifacts:** Slides, error handling flowchart, mini app playground  
+**ByteCourse:** Error Handling in Next.js (8 mins)\
+**Artifacts:** Slides, error handling flowchart, mini app playground\
 **Outcome:** Learned Zod validation + typed error handling
 
 ---
@@ -53,16 +54,18 @@ export async function POST(req: Request) {
 
 **Sarah's PR:** Basic Redis implementation, no TTL, missing error handling
 
-**Old way:** 2 hours Googling "Redis best practices"  
+**Old way:** 2 hours Googling "Redis best practices"\
 **New way:** 10-minute ByteCourse generated from her code
 
 **ByteCourse covered:**
+
 - Cache invalidation strategies
 - TTL configuration
 - Connection pooling
 - Error handling for cache misses
 
 **Artifacts:**
+
 - Architecture diagram (app → Redis → DB)
 - Mini app (live Redis commands)
 - Flowchart (cache decision tree)
@@ -74,6 +77,7 @@ export async function POST(req: Request) {
 ## Example 3: Test Coverage Drop
 
 **PR Comment:**
+
 ```markdown
 🎓 Gap Detected: Coverage dropped 15% on UserService.ts
 📚 Course: Unit Testing Best Practices (7 mins)
@@ -91,10 +95,13 @@ Evidence: Missing edge case tests for null inputs
 **Gap Detected:** Raw SQL query with unsanitized user input
 
 <CodeGroup>
+
 ```typescript Before
 const userId = req.query.id;
 const user = await db.raw(`SELECT * FROM users WHERE id = ${userId}`);
 ```
+
+
 ```typescript After (9-min course)
 const userId = req.query.id;
 const user = await db.user.findUnique({ 
@@ -104,9 +111,9 @@ const user = await db.user.findUnique({
 
 </CodeGroup>
 
-**ByteCourse:** Secure Coding Fundamentals (9 mins)  
-**Artifacts:** Security vulnerability mindmap, attack vector diagram, code playground  
-**Evidence:** SonarCloud scan + CodeAnt report  
+**ByteCourse:** Secure Coding Fundamentals (9 mins)\
+**Artifacts:** Security vulnerability mindmap, attack vector diagram, code playground\
+**Evidence:** SonarCloud scan + CodeAnt report\
 **Outcome:** Learned parameterized queries, input validation, ORM best practices
 
 ---
@@ -114,16 +121,18 @@ const user = await db.user.findUnique({
 ## Example 5: Code Complexity
 
 **PR Comment:**
+
 ```markdown
 🎓 Gap Detected: Function complexity >15 (cyclomatic)
 📚 Course: Refactoring Complex Functions (10 mins)
 Evidence: `processOrder()` has 8 nested conditions
 ```
 
-**Before:** 120-line function with nested if/else  
+**Before:** 120-line function with nested if/else\
 **After course:** Refactored into 5 single-responsibility functions
 
 **Artifacts:**
+
 - Before/after architecture diagram
 - Complexity heatmap (visual)
 - Mini app showing refactoring patterns
@@ -136,7 +145,8 @@ Evidence: `processOrder()` has 8 nested conditions
 
 **David's PR:** Mixing client and server components incorrectly
 
-**Gap Detected:** 
+**Gap Detected:**
+
 - Using `useState` in server component
 - Fetching data on client instead of server
 - Missing `'use client'` directive
@@ -144,12 +154,14 @@ Evidence: `processOrder()` has 8 nested conditions
 **ByteCourse:** Understanding Next.js Server Components (8 mins)
 
 **What he learned:**
+
 - Server vs Client component boundaries
 - When to use each pattern
 - Data fetching strategies
 - Hydration optimization
 
 **Artifacts:**
+
 - Component tree diagram
 - Data flow visualization
 - Interactive playground (toggle server/client)
