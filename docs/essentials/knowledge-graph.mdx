@@ -3,4 +3,70 @@ title: "Knowledge Graph"
 description: "Your skills aren't a list. They're a network."
 ---
 
-# Knowledge Graph Your Knowledge Graph is a **Neo4j-powered network** showing how your skills connect, evolve, and compound. ## Why Graphs \> Lists Traditional resumes: ✅ React ✅ TypeScript ✅ Node.js Your Knowledge Graph shows: - How skills relate (React + TypeScript + Next.js cluster) - What you learned recently (node recency colors) - Proficiency levels (node sizes) - Skill dependencies (edges between nodes) - Evidence links (which PRs prove each skill) ## How It's Built Every ByteCourse completion updates your graph: \`\`\`cypher MATCH (u:User {id: \$userId}) CREATE (u)-[:LEARNED { evidence: "PR-456", confidence: 0.85, timestamp: "2025-01-15" }]-\>(s:Skill {name: "Error Handling"}) **Nodes:** Skills (size = proficiency, color = recency) **Edges:** Relationships (prerequisite, related, applied together) **Clusters:** Domains (Frontend, Backend, DevOps, AI/ML) ## 3 Layout Modes \<CardGroup cols={3}\> \<Card title="Force-Directed" icon="circle-nodes"\> Natural skill clustering \</Card\> \<Card title="Hierarchical" icon="diagram-tree"\> Skill dependencies \</Card\> \<Card title="Circular" icon="ring"\> Proficiency comparison \</Card\> \</CardGroup\> ## What You Can Do - **Explore:** Click a skill to see prerequisites and related concepts - **Find Gaps:** Gray nodes = skills you should learn next - **Track Growth:** Watch your graph expand over time - **Share:** Public profile includes embeddable graph widget ## Privacy Your graph is **private by default**. You control visibility per skill. \<Card title="See Your Graph" icon="diagram-project" href="/dashboard"\> Open your profile → \</Card\>
+Knowledge Graph
+
+Your Knowledge Graph is a Neo4j-powered network that shows how your skills connect, evolve, and compound over time.
+
+Why Graphs Are Better Than Lists
+
+Traditional resumes simply list skills like:
+
+React
+
+TypeScript
+
+Node.js
+
+A Knowledge Graph goes much deeper. It shows:
+
+How skills relate to each other (for example, React + TypeScript + Next.js forming a cluster)
+
+What you learned recently, using recency-based node colors
+
+Proficiency levels, represented by node sizes
+
+Dependencies between skills, shown through connecting edges
+
+Evidence for each skill, linked to the pull requests where the skill was demonstrated
+
+How the Graph Is Built
+
+Every time you complete a ByteCourse, your Knowledge Graph is updated with a new skill relationship. For example:
+
+MATCH (u:User {id: $userId})
+CREATE (u)-[:LEARNED {
+  evidence: "PR-456",
+  confidence: 0.85,
+  timestamp: "2025-01-15"
+}]->(s:Skill {name: "Error Handling"})
+
+
+Nodes represent skills. Their size indicates proficiency, and their color indicates recency.
+Edges represent relationships such as prerequisites, related skills, or skills that are commonly applied together.
+Clusters group skills into broader domains such as Frontend, Backend, DevOps, or AI/ML.
+
+Three Layout Modes
+
+Your Knowledge Graph can be viewed in three different visualization layouts:
+
+Force-Directed – Creates natural clusters of related skills.
+Hierarchical – Shows skill dependencies in a tree-like structure.
+Circular – Displays skills in a ring for easier proficiency comparison.
+
+What You Can Do With the Graph
+
+Explore: Click any skill to see related concepts and prerequisites.
+
+Find Gaps: Skills shown in gray represent areas you can learn next.
+
+Track Growth: Watch your graph expand as you learn over time.
+
+Share: Your public profile includes an embeddable version of the graph.
+
+Privacy
+
+Your Knowledge Graph is private by default. You can choose what becomes visible and what stays hidden, on a per-skill basis.
+
+Call to Action
+
+You can open your profile to view your Knowledge Graph anytime.
