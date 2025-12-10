@@ -32,8 +32,8 @@
   },
 
   "logo": {
-    "light": "/logo/GFLogoWordmark_W.png",
-    "dark": "/logo/GFLogoWordmark_B.png"
+    "light": "/logo/GFlogoBlack.svg",
+    "dark": "/logo/GFlogoLight.svg"
   },
 
   "navbar": {
